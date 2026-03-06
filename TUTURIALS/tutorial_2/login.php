@@ -4,7 +4,7 @@ try
 {
     $sql = "SELECT * FROM Utilisateur";
     $stmt = $pdo->query($sql);
-
+//1
     $utilisateurs = $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 catch (PDOException $e) 
@@ -25,6 +25,7 @@ catch (PDOException $e)
 <h2>Liste des utilisateurs</h2>
 
 <?php
+//2 
 if (!empty($utilisateurs))
 {
     foreach ($utilisateurs as $user) 

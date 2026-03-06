@@ -1,8 +1,9 @@
 <?php
 require 'database.php';
 
-if (isset($_POST['']))
+if (isset($_POST['send']))
 {
+    //1
     $nom = htmlspecialchars(trim($_POST['nom']));
     $email = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
 

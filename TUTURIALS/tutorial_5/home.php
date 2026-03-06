@@ -11,8 +11,10 @@ $stmt->execute([
 $nom = 'Bob';
 $email = 'bob@test.com';
 $stmt = $pdo->prepare("INSERT INTO Utilisateur (nom, email) VALUES (:nom, :email)");
+//1 
 $stmt->bindParam(':nom', $nom);
 $stmt->bindParam(':email', $email);
+//2
 $stmt->execute();
 ?>
 <!DOCTYPE html>

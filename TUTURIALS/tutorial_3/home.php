@@ -1,15 +1,17 @@
 <?php
-require 'connexion.php';
+require 'database.php';
 
 try 
 {
     echo "<h3>INSERT</h3>";
+    //1
     $stmt = $pdo->prepare("INSERT INTO Utilisateur (nom, email) VALUES (:nom, :email)");
+    //2
     $stmt->execute([
         'nom' => 'Charlie',
         'email' => 'charlie@test.com'
     ]);
-
+    //3
     echo $stmt->rowCount() . " ligne(s) insérée(s).<br><br>";
 
 

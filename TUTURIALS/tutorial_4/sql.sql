@@ -2,7 +2,7 @@ CREATE DATABASE blogdb;
 
 USE blogdb;
 
-CREATE TABLE Utilisateur (
+CREATE TABLE table_inexistante (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nom VARCHAR(100),
     email VARCHAR(100)

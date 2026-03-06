@@ -1,0 +1,3 @@
+1######################################################################
+"htmlspecialchars" protect the input from bad inserting
+and save the database from problems

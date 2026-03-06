@@ -1,0 +1,4 @@
+1############################################################
+linke php with sql . insert values inside placeholder (:name , ....)
+2##############################################################
+"execute()" runs the SQL statement with the actual values.

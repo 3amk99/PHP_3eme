@@ -1,0 +1,9 @@
+1##################################################
+"try" is "keyword" where we put our code
+2#######################################################
+"setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);" is a function that
+ throw an exeption if a error happend
+3######################################################
+If there is an error, "catch" it will go to catch it .
+"(PDOException $e)" => this lign mean throw the error in the variable "$e" .
+

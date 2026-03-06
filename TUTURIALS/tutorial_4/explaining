@@ -1,0 +1,4 @@
+1########################################################################"
+put the error that was catched in "erreurs.log" by using 
+"file_put_contents" function . ". PHP_EOL" back to new lign and add .
+"FILE_APPEND" keep the ld files 

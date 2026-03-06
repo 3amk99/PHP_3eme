@@ -1,0 +1,16 @@
+1######################################################################################
+This is a special function that runs automatically when
+a new object of this class is created, and it takes two pieces of data
+2######################################################################################
+inserting blocks of texts in "titre" and "contenu" .
+3#########################################################################################
+So BlogArticle can use the properties and methods of Article without rewriting them.
+4##########################################################################################
+because we call "extends Article" , we can call its proprities like in this case we have 
+"parent::__construct($titre, $contenu);" === " public function __construct($titre, $contenu) 
+                                                {
+                                                    $this->titre = $titre;
+                                                    $this->contenu = $contenu;
+                                                }"
+5################################################################################################
+we just cal the page to get its variables , and get the error of indifined things .

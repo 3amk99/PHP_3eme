@@ -1,0 +1,5 @@
+1################################################
+Take all the rows returned by the SQL query and
+put them in an array of associative arrays
+2##################################################
+past all the rows in the page 

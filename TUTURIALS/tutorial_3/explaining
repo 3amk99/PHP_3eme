@@ -1,0 +1,8 @@
+1#####################################################################################
+Prepare an SQL statement to insert a new user into the Utilisateur table
+:nom and :email are placeholders like places void prepared to receive values
+2########################################################################################
+inserting values in the placesgolders , is the best way of security 
+3######################################################################################
+past how many rows were inserted
+4###################################################################
