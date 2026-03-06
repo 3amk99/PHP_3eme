@@ -1,0 +1,12 @@
+1###############################################################################################
+the "$titre" and "$contenu" are privet that is mean that
+only work inside the "class Article"
+2################################################################################################
+inserting the values in "$this->titre" if the condition are true 
+3################################################################################################
+just return the value of "$this->titre" but not appear in the page 
+4#####################################################################################################
+this "htmlspecialchars" save our html frome the illegal script in the input .
+5###################################################################################
+put the values and calle the functions to work in the page 
+where " Article()" is declered

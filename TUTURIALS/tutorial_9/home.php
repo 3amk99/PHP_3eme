@@ -2,9 +2,10 @@
 
 class Article 
 {
+    //1
     private $titre;
     private $contenu;
-
+    //2
     public function setTitre($titre) 
     {
         if (!empty($titre) && strlen($titre) > 3) 
@@ -16,7 +17,7 @@ class Article
             echo "Titre invalide.";
         }
     }
-
+    //3
     public function getTitre() 
     {
         return $this->titre;
@@ -24,6 +25,7 @@ class Article
 
     public function setContenu($contenu) 
     {
+        //4
         $this->contenu = htmlspecialchars($contenu);
     }
 
