@@ -1,0 +1,5 @@
+1####################################################################################################
+this lign do something incredible it conect to class "Database.php" 
+and in the same time get connected in the function inside the class "Database.php
+that contain the pdo connection , so here [$db = (new Database())->getConnection();]
+$db now conected to PDO .
