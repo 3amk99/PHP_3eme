@@ -1,0 +1,85 @@
+                 >>>>>>>>>>Database.php<<<<<<<<<<<<<<<<<<
+1##################################################################################
+we declare somme variables , privet the are called "access modefiers"
+the access like privet we can just use it inside the class 
+the accsess like public we can use it insude the class and out of the class 
+2###################################################################################
+the function "getConnection()" is responsible for connection to mysql 
+3#########################################################################################
+the variable "conn" is inside a object "$database" and has a value NULL .
+4###########################################################################################
+make "$this->conn" in the key of mysql , it is like a portal to mysql .
+5##############################################################################################
+if a error happend the function "setAttribute" work when a error happend , and throw the error
+inside "ERRMODE_EXCEPTION"
+6#################################################################################################
+stor the problem inside the variable "$e" like array an associative array , then we desplay it 
+"$e->getMessage()" one row error message .
+
+
+
+                 >>>>>>>>>>index.php<<<<<<<<<<<<<<<<<<
+1##############################################################################################
+we connect "$database" to the class "Database" , "Database" look like this 
+
+$database
+   |
+   |-- properties
+   |     host = "localhost"
+   |     dbname = "blogdb"
+   |     username = "root"
+   |     password = ""
+   |     conn = null
+   |
+   |-- method
+         getConnection()
+2###############################################################################################
+here we call the function that inside "database" , then "$db" has the connection
+to mysql now ;
+
+$database
+   |
+   |---- getConnection()
+            |
+            ↓
+         PDO connection
+            |
+            ↓
+           $db
+3#################################################################################################
+we connect "$user" to class User that is mean 
+
+
+$user
+   |
+   |-- properties
+   |     conn 
+   |     table = "users"
+   |     id
+   |     nom
+   |     email
+   |     
+   |
+   |-- method
+   |     __construct($db) 
+   |     create()  
+   |     read() 
+   |     update() 
+   |     delete()
+
+4##################################################################################################
+insert the values (name , email)
+5########################################################################################
+we call the function creat inside class "User" .
+ ===>5_a
+ insert the command lign of mysql but not insert any value yet because we 
+ use prepare to reads the command mysql ligns
+ ===>5_a
+ execut the mysql ligns 
+
+6########################################################################################
+put all the rows in "$stmt" like array with index 
+7######################################################################
+update all the values first prepare it then execute it 
+8################################################################################
+delete the values by id by using prepare then execute 

@@ -2,18 +2,22 @@
 require 'Database.php';
 require 'User.php';
 
-// Connexion
+//1
 $database = new Database();
+//2
 $db = $database->getConnection();
 
-// Créer un utilisateur
+//3
 $user = new User($db);
+//4
 $user->nom = "Alice";
 $user->email = "alice@test.com";
+//5
 $user->create();
 
-// Lire les utilisateurs
+
 $liste = $user->read();
-foreach ($liste as $u) {
+foreach ($liste as $u) 
+{
     echo $u['nom'] . " - " . $u['email'] . "<br>";
 }
