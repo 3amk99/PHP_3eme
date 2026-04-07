@@ -4,4 +4,16 @@ we are inserting two null values "$titre , $contenu" to "$article1"
 2###########################################################################
 "$article1->afficher()" leet "$article1" go to "function afficher()" and 
 run what inside it .
+
+
+
+
+
+$article1
+   |
+   |-- properties
+   |     titre 
+   |     contenu 
+   |-- method
+        afficher()
  

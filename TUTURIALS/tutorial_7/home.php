@@ -20,8 +20,35 @@ class Article
         return "Titre : " . $this->titre . " - Contenu : " . $this->contenu;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //1
 $article1 = new Article();
+
+
+
+
+
+
+
+
+
+
+
 
 $article1->titre = "Mon premier article";
 $article1->contenu = "Ceci est le contenu de mon article.";
